@@ -1,0 +1,53 @@
+# NEACRP 3D REACTOR --- A1 : central rod ejection at HZP
+# ---------------------------------------------------------------------------
+# This data comes from: Finnemann, H., & Galati, A. (1992). NEACRP 3-D LWR Core Transient Benchmark: Final Specifications
+
+# Dimension of the problem (1, 2 or 3)
+set Dimension           = 3
+
+# Number of eigenvalues required
+set N_Eigenvalues       = 1
+
+# REACTOR and MESH DEFINITION
+# Finite element degree
+set FE_Degree           = 2
+
+set Energy_Groups =2
+
+# Global Refinements of the mesh:
+set N_Refinements       = 0
+
+# Number of cells per dimension
+set Mesh_Size           = 17 17 18
+
+# Pitch of the cells
+set Cell_Pitch_x        = 17* 21.606
+set Cell_Pitch_y        = 17* 21.606
+set Cell_Pitch_z        = 30.0 7.7 11.0 15.0 10* 30.0 2* 12.8 8.0 30.0
+
+# Set the first and last existing cell every row in the reactor plant
+set Geometry_Points     = 7 11 5 13 4 14 3 15 2 16 2 16 1 17 1 17 1 17 1 17 1 17 2 16 2 16 3 15 4 14 5 13 7 11
+
+# Boundary Conditopns (LEFT  RIGHT TOP BOTTOM UP DOWN)  (0 = ZeroFlux) (1  Simetria) (2 Albedo) (3 Vaccum, beta=0) 
+set Boundary_Conditions = 0    0   0    0      0  0
+
+
+# OUT OPTIONS
+# True/false - Make a .vtk file with the output
+set Output_Flag         = true
+
+# True/false - Print the grid in .eps
+set Print_Grid_Flag     = false
+
+# Number of Refinements per cell in the .vtk output
+set Out_Refinements     = 0
+
+
+# FILEAMES
+# Filename where it is stored the material cross section
+set XSECS_Filename  = 3D_NEACRP_A1/Prueba_2/NEACRP_th_wr.xsec
+
+# Filename where will be written the output
+set Output_Filename     = 3D_NEACRP_A1/Prueba_2/NEACRP_A1_20.out
+
+

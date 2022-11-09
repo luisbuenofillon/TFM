@@ -1,0 +1,25 @@
+// Print relevant input parameters
+ Problem_File: 3D_NEACRP_A1/Prueba_2/NEACRP_A1_20.prm
+ N_FE_Degree: 2
+ N_Dofs: 35261
+ Matrix-free type: non_diagonal
+ Solver_Type: bifpam
+ EPS_Tolerance: 1e-07
+ KSP_Tolerance: 1e-09
+
+// Specific Solver options
+ Initialization type: multilevel-sp1
+ Preconditioner type: gs-cgilu
+ Dimension Krylov: 4
+// Performance solver
+ Outer Iterations: 31
+ Inner Iterations: 0
+ Matrix-vector multiplications: 156
+ Applications of preconditioner: 124
+
+// Convergence history
+Vector Time: 6.676490e-01 1.020190e+00 1.319127e+00 1.616408e+00 1.910570e+00 2.210778e+00 2.503966e+00 2.798809e+00 3.095870e+00 3.396952e+00 3.699790e+00 4.000703e+00 4.310077e+00 4.613463e+00 4.914320e+00 5.220358e+00 5.525753e+00 5.827912e+00 6.142608e+00 6.444591e+00 6.748964e+00 7.047982e+00 7.344810e+00 7.642480e+00 7.940318e+00 8.238166e+00 8.536876e+00 8.835222e+00 9.133887e+00 9.431946e+00 9.729486e+00 1.002755e+01 
+ 
+Vector Residual: 6.794402e+00 3.633290e-01 6.586442e-02 2.123049e-02 9.746303e-03 6.062162e-03 4.548080e-03 2.066778e-03 2.146809e-03 8.234801e-04 1.167900e-03 3.514693e-04 4.867491e-04 1.623296e-04 2.217803e-04 7.098041e-05 1.202670e-04 3.112912e-05 5.805188e-05 1.212189e-05 1.752963e-05 6.166630e-06 7.018067e-06 2.513204e-06 3.797846e-06 1.076147e-06 2.041147e-06 4.384642e-07 6.870174e-07 1.676420e-07 2.687809e-07 6.769329e-08 
+ 
+CPU Time: 1.003e+01 
